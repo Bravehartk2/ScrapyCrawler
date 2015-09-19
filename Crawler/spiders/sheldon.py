@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from items import SheldonCrawlerItem
+from Crawler.items import SheldonCrawlerItem
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 
@@ -30,5 +30,7 @@ class SheldonSpider(CrawlSpider):
         if (status != 200):
             self.logger.error('Found satutus unlike 200: %s STATUS: %s', response.url, response.status)
         item = SheldonCrawlerItem()
-        item['title'] = response.xpath('//title/text()')
+        item['title'] = response.xpath('//title/text()')[0].extract()
+        item['url'] = response.url
+        item['headers'] = response.headers
         return item

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import datetime
 
 # Scrapy settings for Crawler project
 #
@@ -9,7 +10,7 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'Scapy Crawler'
+BOT_NAME = 'Scrapy Crawler'
 
 SPIDER_MODULES = ['Crawler.spiders']
 NEWSPIDER_MODULE = 'Crawler.spiders'
@@ -27,11 +28,11 @@ NEWSPIDER_MODULE = 'Crawler.spiders'
 #DOWNLOAD_DELAY=3
 
 # The download delay setting will honor only one of:
-#CONCURRENT_REQUESTS_PER_DOMAIN=16
-#CONCURRENT_REQUESTS_PER_IP=16
+CONCURRENT_REQUESTS_PER_DOMAIN = 16
+CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED=False
+COOKIES_ENABLED = True
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED=False
@@ -69,13 +70,13 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 # NOTE: AutoThrottle will honour the standard settings for concurrency and delay
-AUTOTHROTTLE_ENABLED=True
+AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-AUTOTHROTTLE_START_DELAY=5
+AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
-AUTOTHROTTLE_MAX_DELAY=60
+AUTOTHROTTLE_MAX_DELAY = 60
 # Enable showing throttling stats for every response received:
-#AUTOTHROTTLE_DEBUG=False
+AUTOTHROTTLE_DEBUG = True
 
 # Enable and configure HTTP caching (disabled by default)
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
@@ -84,3 +85,13 @@ AUTOTHROTTLE_MAX_DELAY=60
 #HTTPCACHE_DIR='httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES=[]
 #HTTPCACHE_STORAGE='scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# Logging and stats
+DEPTH_STATS_VERBOSE = True
+dateTimeString = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+LOG_FILE = "logs/www.ask-sheldon.com_%s.log" % dateTimeString
+
+# Feed export
+FEED_FORMAT = 'csv'
+FEED_EXPORT_FIELDS = ['title', 'url', 'headers']
+FEED_URI = "export/www.ask-sheldon.com_%s.csv" % dateTimeString
