@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import datetime
+dateTimeString = datetime.datetime.now().strftime("%Y%m%d")
 
 # Scrapy settings for Crawler project
 #
@@ -15,7 +16,6 @@ BOT_NAME = 'Scrapy PageSpider'
 SPIDER_MODULES = ['Crawler.spiders']
 NEWSPIDER_MODULE = 'Crawler.spiders'
 
-dateTimeString = datetime.datetime.now().strftime("%Y%m%d")
 
 # Crawler settings:
 ##################################
@@ -34,13 +34,13 @@ CSS_SELECTORS = (
     '.widget_tag_cloud a',
     '.cat-item a',
     '.entry-title a',
-    '.nav-links a'
+    '.nav-links a',
     '.entry-content a'
 )
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'Crawler (+http://www.yourdomain.com)'
+USER_AGENT = 'ScrapyCrawler (+https://www.ask-sheldon.com)'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS=32
