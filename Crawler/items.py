@@ -8,9 +8,10 @@
 import scrapy
 
 
-class SheldonCrawlerItem(scrapy.Item):
+class PageCrawlerItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    status = scrapy.Field()
     title = scrapy.Field()
     url = scrapy.Field()
     headers = scrapy.Field()

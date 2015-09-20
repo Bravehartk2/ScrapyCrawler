@@ -6,7 +6,7 @@ setup(
     packages=['Crawler', 'Crawler.spiders'],
     url='https://www.ask-sheldon.com',
     license='GPL v.3.0',
-    author='bravehartk2',
+    author='Marcel Lange (Bravehartk2)',
     author_email='info@ask-sheldon.com',
     description='A simple crawler for a given url'
 )

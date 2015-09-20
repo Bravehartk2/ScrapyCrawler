@@ -60,3 +60,6 @@ target/
 
 # Created by .ignore support plugin (hsz.mobi)
 export/*.csv
+
+# settings have to be a symlink to a project specific
+Crawler/settings.py
