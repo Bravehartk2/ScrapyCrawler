@@ -3,11 +3,11 @@ The ScrapyCrawler is a simple page crawler bases on the open source Python libra
 of my webblog https://www.ask-sheldon.com.
 
 # Features 
-- Crawls all links of a given domain recursively so that all pages will be loaded ones 
-- The links that should be called can be specified via simple  CSS selectors
-- Everything can be configured in one single configuration file 
-- Writes logs to a logfile per day (logs folder)
-- Writes crawled urls together with pages titles, status and headers to a csv file per day (export folder)
+- The spider crawls all links of a given domain recursively.  So all domain pages will be loaded ones and the page cache for these pages is warmed.
+- All links that should be called can be specified via simple CSS selectors. Only matching links will be processed.
+- Everything can be configured in a single configuration file.
+- All application logs are written into a log-file in a separate folder (one per day, logs folder)
+- The crawled URLs, page-titles, headers and statuses  are exported to a CSV file (per day, export folder)
 
 # Installation
 1. Install python package management system:
@@ -22,12 +22,17 @@ $> sudo apt-get install python-twisted
 ```
 $> pip install scrapy
 ```
+4. Clone the repository (or just download it via [github] (https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
+```
+$> git clone https://github.com/Bravehartk2/ScrapyCrawler.git
+```
  
 # Settings
 To get the page crawler running you have to set a symlink to a project specific settings file (in the **Crawler** folder).
 
 ```
-$> ln -S myown_settings_file.py settings.py
+$> cd Crawler
+$> ln -S my_own_settings_file.py settings.py
 ``` 
 As an example you find the settings_sheldon.py which crawls all pages of  my blog to initialize the Wordpress fullpage cache use for 
 https://www.ask-sheldon.com.

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import datetime
+
 dateTimeString = datetime.datetime.now().strftime("%Y%m%d")
 
 # Scrapy settings for Crawler project
@@ -27,6 +28,11 @@ CRAWLER_START_URLS = (
     'https://www.ask-sheldon.com/',
 )
 
+# Regexes to allow or
+# Allow all => domains are restricted by CRAWLER_DOMAINS above
+CRAWLER_ALLOW_REGEX = None
+CRAWLER_DENY_REGEX = None
+
 # CSS selectors to get links:
 CSS_SELECTORS = (
     '.menu-item a',
@@ -34,6 +40,7 @@ CSS_SELECTORS = (
     '.widget_tag_cloud a',
     '.cat-item a',
     '.entry-title a',
+    '.entry-footer a',
     '.nav-links a',
     '.entry-content a'
 )
@@ -69,7 +76,8 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'Crawler.middlewares.MyCustomSpiderMiddleware': 543,
+# 'Crawler.middlewares.MyCustomSpiderMiddleware': 543,
+# 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware': None,
 # }
 
 # Enable or disable downloader middlewares
