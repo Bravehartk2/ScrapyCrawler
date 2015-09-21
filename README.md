@@ -12,18 +12,22 @@ of my webblog https://www.ask-sheldon.com.
 # Installation
 
 1. Install python package management system:
+        
    ```
    $> sudo apt-get install python-pip
    ```
 2. Install required networking engine twisted:
+        
    ```
    $> sudo apt-get install python-twisted
    ```
 3. Install scrapy via package manager:
+        
    ```
    $> pip install scrapy
    ```
 4. Clone the repository (or just download it via [github] (https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
+        
    ```
    $> git clone https://github.com/Bravehartk2/ScrapyCrawler.git
    ```
