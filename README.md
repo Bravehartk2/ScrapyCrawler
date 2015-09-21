@@ -20,7 +20,7 @@ $> sudo apt-get install python-twisted
 ```
 3. Install scrapy via package manager:
 ```
-$> pip install scrapy
+$> sudo pip install scrapy
 ```
 4. Clone the repository (or just download it via [github] (https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
 ```
