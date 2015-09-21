@@ -10,22 +10,23 @@ of my webblog https://www.ask-sheldon.com.
 - The crawled URLs, page-titles, headers and statuses  are exported to a CSV file (per day, export folder)
 
 # Installation
+
 1. Install python package management system:
-```
-$> sudo apt-get install python-pip
-```
+   ```
+   $> sudo apt-get install python-pip
+   ```
 2. Install required networking engine twisted:
-``` 
-$> sudo apt-get install python-twisted
-```
+   ```
+   $> sudo apt-get install python-twisted
+   ```
 3. Install scrapy via package manager:
-```
-$> sudo pip install scrapy
-```
+   ```
+   $> pip install scrapy
+   ```
 4. Clone the repository (or just download it via [github] (https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
-```
-$> git clone https://github.com/Bravehartk2/ScrapyCrawler.git
-```
+   ```
+   $> git clone https://github.com/Bravehartk2/ScrapyCrawler.git
+   ```
  
 # Settings
 To get the page crawler running you have to set a symlink to a project specific settings file (in the **Crawler** folder).
