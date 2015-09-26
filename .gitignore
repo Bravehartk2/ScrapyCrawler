@@ -63,3 +63,7 @@ export/*.csv
 
 # settings have to be a symlink to a project specific
 Crawler/settings.py
+.scrapy
+
+# IntelliJ IDE settings
+.idea
