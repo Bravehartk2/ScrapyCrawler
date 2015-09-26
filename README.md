@@ -29,7 +29,7 @@ The output is written into a logfile per day (under logs).
    ```
    $> pip install scrapy
    ```
-4. Clone the repository (or just download it via [github] (https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
+4. Clone the repository (or just download it via [GitHub] (https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
         
    ```
    $> git clone https://github.com/Bravehartk2/ScrapyCrawler.git
