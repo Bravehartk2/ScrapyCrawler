@@ -18,7 +18,6 @@
 *   @package ScrapyCrawler 
  '''
 
-
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 
@@ -26,7 +25,7 @@ import Crawler.settings
 from Crawler.items import PageCrawlerItem
 
 
-class SheldonSpider(CrawlSpider):
+class ScrapyCrawlerSpider(CrawlSpider):
     name = Crawler.settings.CRAWLER_NAME
     allowed_domains = Crawler.settings.CRAWLER_DOMAINS
     start_urls = Crawler.settings.CRAWLER_START_URLS

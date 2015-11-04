@@ -1,9 +1,6 @@
 # ScrapyCrawler
 The ScrapyCrawler is a simple page crawler bases on the open source Python library Scrapy. Its build to initialize the Fullpage Cache 
-of my webblog https://www.ask-sheldon.com. It crawls every page of the blog and extracts links based on CSS selectors. Afterwards in follows 
-every extracted link recursively if it has no nofollow attribute set. 
-The spider exports every crawled url with its corresponding title, status and headers in a CSV file under export (one per day).
-The output is written into a logfile per day (under logs).
+of my webblog https://www.ask-sheldon.com.
 
 # Features 
 - The spider crawls all links of a given domain recursively.  So all domain pages will be loaded ones and the page cache for these pages is warmed.
@@ -13,24 +10,21 @@ The output is written into a logfile per day (under logs).
 - The crawled URLs, page-titles, headers and statuses  are exported to a CSV file (per day, export folder)
 
 # Installation
-
 1. Install python package management system:
-        
+
    ```
    $> sudo apt-get install python-pip
    ```
 2. Install required networking engine twisted:
-        
+
    ```
    $> sudo apt-get install python-twisted
    ```
 3. Install scrapy via package manager:
-        
    ```
    $> pip install scrapy
    ```
-4. Clone the repository (or just download it via [GitHub] (https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
-        
+4. Clone the repository (or just download it via [github] (https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
    ```
    $> git clone https://github.com/Bravehartk2/ScrapyCrawler.git
    ```
