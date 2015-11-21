@@ -21,7 +21,7 @@
 
 import datetime
 
-dateTimeString = datetime.datetime.now().strftime("%Y%m%d")
+dateTimeString = datetime.datetime.now().strftime("%Y%m%d_%H:%M:%S")
 
 # Scrapy settings for Crawler project
 #
@@ -64,7 +64,6 @@ CSS_SELECTORS = (
     '.nav-links a',
     '.entry-content a'
 )
-
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'ScrapyCrawler (+https://www.ask-sheldon.com)'
@@ -121,7 +120,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
 # NOTE: AutoThrottle will honour the standard settings for concurrency and delay
-AUTOTHROTTLE_ENABLED = True
+AUTOTHROTTLE_ENABLED = False
 # The initial download delay
 AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
@@ -131,7 +130,7 @@ AUTOTHROTTLE_MAX_DELAY = 60
 
 # Enable and configure HTTP caching (disabled by default)
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-HTTPCACHE_ENABLED = True
+HTTPCACHE_ENABLED = False
 HTTPCACHE_EXPIRATION_SECS = 3600
 HTTPCACHE_DIR = 'httpcache'
 HTTPCACHE_IGNORE_HTTP_CODES = []
@@ -143,5 +142,5 @@ LOG_FILE = "logs/www.ask-sheldon.com_%s.log" % dateTimeString
 
 # Feed export
 FEED_FORMAT = 'csv'
-FEED_EXPORT_FIELDS = ['status', 'title', 'url', 'headers']
+FEED_EXPORT_FIELDS = ['parse_time', 'status', 'title', 'url', 'headers']
 FEED_URI = "export/www.ask-sheldon.com_%s.csv" % dateTimeString

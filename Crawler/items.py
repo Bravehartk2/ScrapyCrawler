@@ -30,7 +30,9 @@ import scrapy
 class PageCrawlerItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    parse_time = scrapy.Field()
     status = scrapy.Field()
+    varnish_status = scrapy.Field()
     title = scrapy.Field()
     url = scrapy.Field()
     headers = scrapy.Field()

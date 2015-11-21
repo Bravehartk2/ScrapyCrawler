@@ -7,7 +7,7 @@ of my webblog https://www.ask-sheldon.com.
 - All links that should be called can be specified via simple CSS selectors. Only matching links will be processed.
 - Everything can be configured in a single configuration file.
 - All application logs are written into a log-file in a separate folder (one per day, logs folder)
-- The crawled URLs, page-titles, headers and statuses  are exported to a CSV file (per day, export folder)
+- The crawled URLs, page-titles, headers and statuses are exported to a CSV file (per day, export folder)
 
 # Installation
 1. Install python package management system:
