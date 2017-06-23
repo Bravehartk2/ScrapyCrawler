@@ -24,7 +24,7 @@ of my webblog https://www.ask-sheldon.com.
    ```
    $> pip install scrapy
    ```
-4. Clone the repository (or just download it via [github] (https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
+4. Clone the repository (or just download it via [github](https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
    ```
    $> git clone https://github.com/Bravehartk2/ScrapyCrawler.git
    ```
