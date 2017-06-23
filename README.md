@@ -53,6 +53,6 @@ $> scrapy crawl sheldon
 For more information about the used Python library Scrapy you should have a look at the following resources:
 
 - https://www.ask-sheldon.com/python-website-crawler/
-- [Scrapy project page] (http://scrapy.org/)
-- [Scrapy documentation] (http://doc.scrapy.org/en/latest/)
-- [Scrapy github wiki] (https://github.com/scrapy/scrapy/wiki)
+- Scrapy project page: http://scrapy.org/
+- Scrapy documentation: http://doc.scrapy.org/en/latest/
+- Scrapy github wiki: https://github.com/scrapy/scrapy/wiki
