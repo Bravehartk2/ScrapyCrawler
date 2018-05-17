@@ -40,5 +40,6 @@ class PageCrawlerItem(scrapy.Item):
     # print scrapy.Item.fields.headers
     # cachehit = json.load(scrapy.Item.fields.headers)['X-Cache']
     #
-    # print headers
+    print headers
+
     pass
