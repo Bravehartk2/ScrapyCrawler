@@ -7,7 +7,7 @@ of my webblog https://www.ask-sheldon.com.
 - All links that should be called can be specified via simple CSS selectors. Only matching links will be processed.
 - Everything can be configured in a single configuration file.
 - All application logs are written into a log-file in a separate folder (one per day, logs folder)
-- The crawled URLs, page-titles, headers and statuses  are exported to a CSV file (per day, export folder)
+- The crawled URLs, page-titles, headers and statuses are exported to a CSV file (per day, export folder)
 
 # Installation
 1. Install python package management system:
@@ -24,7 +24,7 @@ of my webblog https://www.ask-sheldon.com.
    ```
    $> pip install scrapy
    ```
-4. Clone the repository (or just download it via [github] (https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
+4. Clone the repository (or just download it via [github](https://github.com/Bravehartk2/ScrapyCrawler/archive/master.zip))
    ```
    $> git clone https://github.com/Bravehartk2/ScrapyCrawler.git
    ```
@@ -52,7 +52,7 @@ $> scrapy crawl sheldon
 # More information about Scrapy
 For more information about the used Python library Scrapy you should have a look at the following resources:
 
-- https://www.ask-sheldon.com/python-website-crawler/
-- [Scrapy project page] (http://scrapy.org/)
-- [Scrapy documentation] (http://doc.scrapy.org/en/latest/)
-- [Scrapy github wiki] (https://github.com/scrapy/scrapy/wiki)
+- [Blogpost ask-sheldon.com](https://www.ask-sheldon.com/python-website-crawler/)
+- [Scrapy project page](http://scrapy.org/)
+- [Scrapy documentation](http://doc.scrapy.org/en/latest/)
+- [Scrapy github wiki](https://github.com/scrapy/scrapy/wiki)

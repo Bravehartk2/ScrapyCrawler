@@ -59,7 +59,9 @@ class ScrapyCrawlerSpider(CrawlSpider):
     def parse_item(self, response):
         # self.logger.info('Parsed URL: %s with STATUS %s', response.url, response.status)
         item = PageCrawlerItem()
+        item['parse_time'] = response.headers['Date']
         item['status'] = response.status
+        item['varnish_status'] = response.headers['X-Cache']
         item['title'] = response.xpath('//title/text()')[0].extract()
         item['url'] = response.url
         item['headers'] = response.headers
