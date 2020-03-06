@@ -36,4 +36,10 @@ class PageCrawlerItem(scrapy.Item):
     title = scrapy.Field()
     url = scrapy.Field()
     headers = scrapy.Field()
+
+    # print scrapy.Item.fields.headers
+    # cachehit = json.load(scrapy.Item.fields.headers)['X-Cache']
+    #
+    print headers
+
     pass
